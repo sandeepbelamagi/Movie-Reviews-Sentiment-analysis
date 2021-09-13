@@ -27,3 +27,6 @@ In this project the three ML modules are used because to vary the accuracy
 The Naive Bayes algorithum is for the predicting data is classification problem.
 
 The BernouliNB model pickel file is used for deployement purpose beacause it's have good accuraccy
+
+check the below link:
+https://movie-reviews-predictor.herokuapp.com/
