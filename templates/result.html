@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Movie Reivews Predictor</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Website Title -->
+    	<div class="container">
+    		<h2 class='container-heading'><span class="heading_font">Movie Reivews Predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==0 %}
+				<h1>The Movie Reivews are <span class='result-prediction'>Negative</span> 
+				<br> You are capable of choosing the good movie have a good day !!! 👍</h1>
+			{% elif prediction==1 %}
+				<h1>The Movie Reivews are <span class='result-prediction'>Positive</span> 
+				<br> You have choosen the good one have a good day...!! 👍</h1>
+			
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+        <div class='footer'>
+            <div class="contact">
+                <p> <strong>Follow :</strong></p>
+                <a target="_blank" href="https://github.com/sandeepbelamagi/Movie-Reviews-Sentiment-analysis"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sandeepkumar-belamagi-45b663192/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+            </div>
+        </div>
+
+	</body>
+</html
